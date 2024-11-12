@@ -1,6 +1,5 @@
-
 const CalendarLoading = () => {
-  return <div>Loading... </div>
-}
+  return <div>Loading... </div>;
+};
 
-export default CalendarLoading
+export default CalendarLoading;

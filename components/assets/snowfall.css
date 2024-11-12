@@ -19,7 +19,8 @@
 }
 
 @keyframes dimlight {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -27,50 +28,48 @@
   }
 }
 
-
-
 #snow1 {
   animation: snowfall 2s infinite;
-   fill: white
+  fill: white;
 }
 
 #snow2 {
   animation: snowfall 1s 0.25s infinite;
-   fill: white
+  fill: white;
 }
-#snow3{
-        animation: snowfall 1s  0.5s infinite;
-         fill: white
-    }
-    #snow4{
-        animation: snowfall 1s  1s infinite;
-         fill: white
-    }
-    #snow5{
-        animation: snowfall 2s 1.25s infinite ;
-         fill: white
-    }
-    #snow6{
-        animation: snowfall 1.5s 1.5s infinite ;
-         fill: white
-    }
-    #snow7{
-        animation: snowfall 0.5s  0.4s infinite;
-         fill: white
-    }
-    #snow8{
-        animation: snowfall 0.5s 1s infinite ;
-         fill: white
-    }
-    #snow9{
-        animation: snowfall 1.5s 0.5s infinite ;
-         fill: white
-    }
-    #snow10{
-        animation: snowfall 1.5s 1s infinite ;
-         fill: white
-    }
-    #snow11{
-        animation: snowfall 1.5s 1s infinite ;
-         fill: white
-    }
+#snow3 {
+  animation: snowfall 1s 0.5s infinite;
+  fill: white;
+}
+#snow4 {
+  animation: snowfall 1s 1s infinite;
+  fill: white;
+}
+#snow5 {
+  animation: snowfall 2s 1.25s infinite;
+  fill: white;
+}
+#snow6 {
+  animation: snowfall 1.5s 1.5s infinite;
+  fill: white;
+}
+#snow7 {
+  animation: snowfall 0.5s 0.4s infinite;
+  fill: white;
+}
+#snow8 {
+  animation: snowfall 0.5s 1s infinite;
+  fill: white;
+}
+#snow9 {
+  animation: snowfall 1.5s 0.5s infinite;
+  fill: white;
+}
+#snow10 {
+  animation: snowfall 1.5s 1s infinite;
+  fill: white;
+}
+#snow11 {
+  animation: snowfall 1.5s 1s infinite;
+  fill: white;
+}
