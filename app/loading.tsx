@@ -1,5 +1,5 @@
 const CalendarLoading = () => {
-  return <div>Loading... </div>;
+  return <div className='m-4'>Loading... </div>;
 };
 
 export default CalendarLoading;

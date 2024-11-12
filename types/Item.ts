@@ -27,4 +27,3 @@ export type QuoteContent = {
 export type Item = TextContent | QuizContent | ImageContent | QuoteContent;
 
 export type ContentType = 'text' | 'image' | 'video' | 'quiz' | 'quote';
-//export type Item = Items["type"];

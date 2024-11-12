@@ -8,7 +8,7 @@ const CalendarPage = () => {
     { id: 2, title: '2', subtitle: 'Hei' },
   ]; // todo: typer?
   return (
-    <div className='min-h-screen flex justify-center bg-red-600'>
+    <div className='min-h-screen flex justify-center bg-red-600 m-4'>
       <div className='flex items-center gap-4 p-4'>
         {items.map((item) => (
           <Link key={item.id} href={`/calendar/${item.id}`}>
