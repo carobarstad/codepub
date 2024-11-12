@@ -1,4 +1,4 @@
-'use server'
+'use server';
 import fs from 'fs';
 import path from 'path';
 
@@ -8,13 +8,13 @@ const getCalendarData = () => {
   const quizDataFilePath = path.resolve('./api', 'calendarDays.json');
   const fileContents = fs.readFileSync(quizDataFilePath, 'utf8');
   console.log(fileContents);
-  
+
   return JSON.parse(fileContents);
-}
+};
 
 export const getItemByIndex = async (index: number) => {
-    const data = await getCalendarData()
-    if (!data) return null
-    if (index < 0 || index > data.length) return null
-    return data[index]
-}
+  const data = await getCalendarData();
+  if (!data) return null;
+  if (index < 0 || index > data.length) return null;
+  return data[index];
+};

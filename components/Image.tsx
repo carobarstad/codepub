@@ -1,11 +1,8 @@
-import { ImageContent } from '@/types/Item'
-import React from 'react'
-import Image from "next/image"
+import { ImageContent } from '@/types/Item';
+import Image from 'next/image';
 
-const ImageComponent = ({item}: {item: ImageContent}) => {
-  return (
-    <Image alt={item.alt} src={item.src}/>
-  )
-}
+const ImageComponent = ({ item }: { item: ImageContent }) => {
+  return <Image alt={item.alt} src={item.src} />;
+};
 
-export default ImageComponent
+export default ImageComponent;
