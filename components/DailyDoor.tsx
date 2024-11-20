@@ -1,12 +1,11 @@
+'use client';
 import { DailyDoorItem } from '@/types/';
 
-const DailyDoor = ({ title, subtitle, backgroundImageSrc }: DailyDoorItem) => {
+const DailyDoor = ({ title }: DailyDoorItem) => {
   //TODO: see if possible to have as background
-
   return (
-    <div className='border border-blue-600 bg-blue-300 rounded w-40 h-40'>
-      <h1>{title}</h1>
-      {subtitle && <h1>{subtitle}</h1>}
+    <div className='flex border border-white bg-cyan-700 rounded w-40 h-40 items-center justify-center'>
+      <h1 className='text-4xl font-semibold text-white'>{title}</h1>
     </div>
   );
 };
