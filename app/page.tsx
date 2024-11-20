@@ -42,8 +42,8 @@ const CalendarPage = () => {
   const shuffledItems = shuffleArray(items);
 
   return (
-    <div className='min-h-screen flex justify-center bg-slate-200'>
-      <div className='grid grid-cols-6 h-10 gap-2'>
+    <div className='min-h-screen flex justify-center bg-slate-200 h-full'>
+      <div className='grid lg:grid-cols-6 sm:grid-cols-4 grid-cols-2 gap-2 h-full py-2 px-4'>
         {shuffledItems.map((item) => (
           <Link key={item.id} href={`/calendar/${item.id}`}>
             <DailyDoor key={item.id} title={item.title} subtitle={item.subtitle} />
