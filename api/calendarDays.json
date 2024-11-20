@@ -3,7 +3,12 @@
     "type": "quiz",
     "question": "What is the capital of France?",
     "solution": "Paris",
-    "options": ["Paris", "London", "Berlin", "Madrid"]
+    "options": [
+      "Paris",
+      "London",
+      "Berlin",
+      "Madrid"
+    ]
   },
   {
     "type": "quote",
@@ -12,9 +17,9 @@
     "author": "Steve Jobs"
   },
   {
-    "type": "text",
-    "header": "Introduction",
-    "text": "Welcome to your 10-day challenge!"
+    "type": "image",
+    "src": "https://www.russh.com/wp-content/uploads/2020/12/St-Lukes-Mews-Notting-Hill.jpg",
+    "alt": "Love Actually signs"
   },
   {
     "type": "image",
@@ -25,7 +30,12 @@
     "type": "quiz",
     "question": "Which planet is known as the Red Planet?",
     "solution": "Mars",
-    "options": ["Earth", "Mars", "Jupiter", "Saturn"]
+    "options": [
+      "Earth",
+      "Mars",
+      "Jupiter",
+      "Saturn"
+    ]
   },
   {
     "type": "quote",
@@ -47,7 +57,12 @@
     "type": "quiz",
     "question": "What is the chemical symbol for water?",
     "solution": "H2O",
-    "options": ["HO", "H2O", "O2", "H2"]
+    "options": [
+      "HO",
+      "H2O",
+      "O2",
+      "H2"
+    ]
   },
   {
     "type": "quote",
@@ -69,7 +84,12 @@
     "type": "quiz",
     "question": "Which element has the atomic number 1?",
     "solution": "Hydrogen",
-    "options": ["Oxygen", "Hydrogen", "Helium", "Carbon"]
+    "options": [
+      "Oxygen",
+      "Hydrogen",
+      "Helium",
+      "Carbon"
+    ]
   },
   {
     "type": "quote",
@@ -91,7 +111,12 @@
     "type": "quiz",
     "question": "What is the largest mammal in the world?",
     "solution": "Blue Whale",
-    "options": ["Elephant", "Blue Whale", "Giraffe", "Orca"]
+    "options": [
+      "Elephant",
+      "Blue Whale",
+      "Giraffe",
+      "Orca"
+    ]
   },
   {
     "type": "quote",
@@ -112,7 +137,12 @@
     "type": "quiz",
     "question": "Which organ is responsible for pumping blood throughout the body?",
     "solution": "Heart",
-    "options": ["Lungs", "Brain", "Kidneys", "Heart"]
+    "options": [
+      "Lungs",
+      "Brain",
+      "Kidneys",
+      "Heart"
+    ]
   },
   {
     "type": "quote",
@@ -161,7 +191,12 @@
     "type": "quiz",
     "question": "Which continent is the largest by land area?",
     "solution": "Asia",
-    "options": ["Africa", "Asia", "Europe", "North America"]
+    "options": [
+      "Africa",
+      "Asia",
+      "Europe",
+      "North America"
+    ]
   },
   {
     "type": "quote",
@@ -183,7 +218,12 @@
     "type": "quiz",
     "question": "What is the main ingredient in guacamole?",
     "solution": "Avocado",
-    "options": ["Tomato", "Onion", "Avocado", "Pepper"]
+    "options": [
+      "Tomato",
+      "Onion",
+      "Avocado",
+      "Pepper"
+    ]
   },
   {
     "type": "quote",
@@ -205,7 +245,12 @@
     "type": "quiz",
     "question": "Which element is known as the 'King of the Jungle'?",
     "solution": "Lion",
-    "options": ["Tiger", "Elephant", "Lion", "Cheetah"]
+    "options": [
+      "Tiger",
+      "Elephant",
+      "Lion",
+      "Cheetah"
+    ]
   },
   {
     "type": "quote",
