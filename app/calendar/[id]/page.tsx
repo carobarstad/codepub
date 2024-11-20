@@ -1,5 +1,4 @@
 import { getItemByIndex } from '@/api/quiz';
-import Snowfall from '@/components/snowfall';
 import { Item } from '@/types';
 import { ContentSwitch } from '@/utils/ContentSwitch';
 import { notFound } from 'next/navigation';
@@ -30,8 +29,8 @@ const mockDays: Item[] = [
   },
 ];
 
-const CalendarDayPage = async ({ params }: { params: { id: string } }) => {
-  const { id } = params;
+const CalendarDayPage = async ({ params }: { params: Promise<{ id: string }> }) => {
+  const id = (await params).id;
   const idAsInt = parseInt(id);
   const data = mockDays[idAsInt - 1]; // TODO: Hent info fra backend til den id-en
   const calendarData = await getItemByIndex(idAsInt - 1);
@@ -41,9 +40,9 @@ const CalendarDayPage = async ({ params }: { params: { id: string } }) => {
     notFound();
   }
   return (
-    <div className='bg-red-700'>
+    <div className=''>
       CalendarDayPage {id}
-      <Snowfall />
+      {/* <Snowfall /> */}
       <div>
         <ContentSwitch item={calendarData} />
       </div>
