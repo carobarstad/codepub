@@ -1,5 +1,10 @@
 import DailyDoor from '@/components/DailyDoor';
+import Image from 'next/image';
 import Link from 'next/link';
+import decoration1 from '../components/assets/decoration1.png';
+import decoration2 from '../components/assets/decoration2.png';
+import snow from '../components/assets/snow.png';
+import { Snowfall } from '../components/snowfall';
 
 const shuffleArray = (array: any[]) => {
   let shuffledArray = [...array];
@@ -43,6 +48,9 @@ const CalendarPage = () => {
 
   return (
     <div className='min-h-screen flex justify-center bg-slate-200 h-full'>
+      <Snowfall />
+      <Image src={decoration1} width={280} alt='decoration' className='absolute top-15 right-0' />
+      <Image src={decoration2} width={280} alt='decoration' className='absolute top-15 left-0' />
       <div className='grid lg:grid-cols-6 sm:grid-cols-4 grid-cols-2 gap-2 h-full py-2 px-4'>
         {shuffledItems.map((item) => (
           <Link key={item.id} href={`/calendar/${item.id}`}>
@@ -50,6 +58,7 @@ const CalendarPage = () => {
           </Link>
         ))}
       </div>
+      <Image src={snow} alt='decoration' className='absolute bottom-0 left-0' />
     </div>
   );
 };
