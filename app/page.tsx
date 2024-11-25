@@ -1,10 +1,9 @@
-import DailyDoor from '@/components/DailyDoor';
 import Image from 'next/image';
-import Link from 'next/link';
-import { Suspense, use } from 'react';
+import { Suspense } from 'react';
 import decoration1 from '../components/assets/decoration1.png';
 import decoration2 from '../components/assets/decoration2.png';
 import snow from '../components/assets/snow.png';
+import { CalendarGrid, CalendarGridSkeleton } from '../components/CalendarGrid';
 import { Snowfall } from '../components/snowfall';
 
 const shuffleArray = (array: { id: number; title: string; subtitle: string | undefined }[]) => {
@@ -48,7 +47,7 @@ const CalendarPage = () => {
     (resolve, reject) => {
       setTimeout(() => {
         resolve(shuffleArray(items));
-      }, 1500);
+      }, 2000);
     },
   );
   return (
@@ -60,38 +59,6 @@ const CalendarPage = () => {
         <CalendarGrid itemsPromise={shuffledItems} />;
       </Suspense>
       <Image src={snow} alt='decoration' className='absolute bottom-0 left-0' />
-    </div>
-  );
-};
-type CalendarGridProps = {
-  itemsPromise: Promise<{ id: number; title: string; subtitle: string | undefined }[]>;
-};
-
-const CalendarGrid = ({ itemsPromise }: CalendarGridProps) => {
-  // TODO: Hente items fra backend
-  const shuffledItems = use(itemsPromise);
-
-  return (
-    <div className='grid lg:grid-cols-6 sm:grid-cols-4 grid-cols-2 gap-2 h-full py-2 px-4'>
-      {shuffledItems.map((item) => (
-        <Link key={item.id} href={`/calendar/${item.id}`}>
-          <DailyDoor key={item.id} title={item.title} subtitle={item.subtitle} />
-        </Link>
-      ))}
-    </div>
-  );
-};
-
-const CalendarGridSkeleton = () => {
-  return (
-    <div className='min-h-screen flex justify-center bg-slate-200 h-full'>
-      <div className='grid lg:grid-cols-6 sm:grid-cols-4 grid-cols-2 gap-2 h-full py-2 px-4'>
-        {items.map((item) => (
-          <div key={item.id}>
-            <div className='flex border border-white bg-cyan-700 animate-pulse rounded w-36 h-36 items-center justify-center'></div>
-          </div>
-        ))}
-      </div>
     </div>
   );
 };
