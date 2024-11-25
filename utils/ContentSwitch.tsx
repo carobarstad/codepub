@@ -1,3 +1,4 @@
+import Picture from '@/components/Picture';
 import Quiz from '@/components/Quiz';
 import Quote from '@/components/Quote';
 import { ContentItem } from '@/types/ContentItem';
@@ -13,8 +14,8 @@ export const ContentSwitch: FC<{ item: ContentItem }> = ({ item }) => {
     // case "text":
     //   return( <Quote item={item} />)
 
-    // case "image":
-    //   return( <Quote item={item} />)
+    case 'image':
+      return <Picture item={item} />;
 
     case 'quiz':
       return <Quiz item={item} />;
