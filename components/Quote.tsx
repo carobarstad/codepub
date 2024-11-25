@@ -1,4 +1,4 @@
-import { QuoteContent } from '@/types/Item';
+import { QuoteContent } from '@/types/ContentItem';
 
 const Quote = ({ item }: { item: QuoteContent }) => {
   return (

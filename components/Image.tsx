@@ -1,4 +1,4 @@
-import { ImageContent } from '@/types/Item';
+import { ImageContent } from '@/types/ContentItem';
 import Image from 'next/image';
 
 const ImageComponent = ({ item }: { item: ImageContent }) => {
