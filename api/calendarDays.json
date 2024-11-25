@@ -81,7 +81,7 @@
     "type": "quote",
     "day": 10,
     "id": 10,
-    "allowedToOpen": false,
+    "allowedToOpen": true,
     "header": "Drive",
     "text": "Don't watch the clock; do what it does. Keep going.",
     "author": "Sam Levenson"
@@ -132,7 +132,7 @@
     "type": "quiz",
     "day": 16,
     "id": 16,
-    "allowedToOpen": true,
+    "allowedToOpen": false,
     "question": "What is the largest mammal in the world?",
     "solution": "Blue Whale",
     "options": ["Elephant", "Blue Whale", "Giraffe", "Orca"]
@@ -141,7 +141,7 @@
     "type": "text",
     "day": 17,
     "id": 17,
-    "allowedToOpen": true,
+    "allowedToOpen": false,
     "header": "Day 5",
     "text": "Halfway there, keep going!"
   },
@@ -149,7 +149,7 @@
     "type": "quote",
     "day": 18,
     "id": 18,
-    "allowedToOpen": true,
+    "allowedToOpen": false,
     "header": "Encouragement",
     "text": "The harder you work for something, the greater you'll feel when you achieve it."
   },
@@ -157,7 +157,7 @@
     "type": "quiz",
     "day": 19,
     "id": 19,
-    "allowedToOpen": true,
+    "allowedToOpen": false,
     "question": "Which organ is responsible for pumping blood throughout the body?",
     "solution": "Heart",
     "options": ["Lungs", "Brain", "Kidneys", "Heart"]
@@ -166,7 +166,7 @@
     "type": "quote",
     "day": 20,
     "id": 20,
-    "allowedToOpen": true,
+    "allowedToOpen": false,
     "header": "Perseverance",
     "text": "The only limit to our realization of tomorrow is our doubts of today.",
     "author": "Franklin D. Roosevelt"
@@ -175,7 +175,7 @@
     "type": "image",
     "day": 21,
     "id": 21,
-    "allowedToOpen": true,
+    "allowedToOpen": false,
     "src": "https://example.com/image6.jpg",
     "alt": "A picturesque waterfall"
   },
@@ -183,7 +183,7 @@
     "type": "quote",
     "day": 22,
     "id": 22,
-    "allowedToOpen": true,
+    "allowedToOpen": false,
     "header": "Success",
     "text": "Success is not the key to happiness. Happiness is the key to success.",
     "author": "Albert Schweitzer"
@@ -192,7 +192,7 @@
     "type": "quiz",
     "day": 23,
     "id": 23,
-    "allowedToOpen": true,
+    "allowedToOpen": false,
     "question": "Which continent is the largest by land area?",
     "solution": "Asia",
     "options": ["Africa", "Asia", "Europe", "North America"]
@@ -201,7 +201,7 @@
     "type": "quiz",
     "day": 24,
     "id": 24,
-    "allowedToOpen": true,
+    "allowedToOpen": false,
     "question": "What is the speed of light?",
     "solution": "299,792,458 meters per second",
     "options": [
