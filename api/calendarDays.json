@@ -1,167 +1,207 @@
 [
   {
     "type": "quiz",
+    "day": 1,
+    "id": 1,
+    "allowedToOpen": true,
     "question": "What is the capital of France?",
     "solution": "Paris",
-    "options": [
-      "Paris",
-      "London",
-      "Berlin",
-      "Madrid"
-    ]
+    "options": ["Paris", "London", "Berlin", "Madrid"]
+  },
+  {
+    "type": "image",
+    "day": 2,
+    "id": 2,
+    "allowedToOpen": true,
+    "src": "https://www.russh.com/wp-content/uploads/2020/12/St-Lukes-Mews-Notting-Hill.jpg",
+    "alt": "Love Actually signs"
   },
   {
     "type": "quote",
+    "day": 3,
+    "id": 3,
+    "allowedToOpen": true,
     "header": "Motivation",
     "text": "The only way to do great work is to love what you do.",
     "author": "Steve Jobs"
   },
   {
-    "type": "image",
-    "src": "https://www.russh.com/wp-content/uploads/2020/12/St-Lukes-Mews-Notting-Hill.jpg",
-    "alt": "Love Actually signs"
-  },
-  {
-    "type": "image",
-    "src": "https://example.com/image1.jpg",
-    "alt": "A beautiful sunrise"
-  },
-  {
     "type": "quiz",
+    "day": 4,
+    "id": 4,
+    "allowedToOpen": true,
     "question": "Which planet is known as the Red Planet?",
     "solution": "Mars",
-    "options": [
-      "Earth",
-      "Mars",
-      "Jupiter",
-      "Saturn"
-    ]
+    "options": ["Earth", "Mars", "Jupiter", "Saturn"]
   },
   {
     "type": "quote",
+    "day": 5,
+    "id": 5,
+    "allowedToOpen": true,
     "header": "Wisdom",
     "text": "Life is what happens when you're busy making other plans.",
     "author": "John Lennon"
   },
   {
-    "type": "text",
-    "header": "Day 2",
-    "text": "Keep pushing forward!"
+    "type": "image",
+    "day": 6,
+    "id": 6,
+    "allowedToOpen": true,
+    "src": "https://example.com/image1.jpg",
+    "alt": "A beautiful sunrise"
   },
   {
     "type": "image",
+    "day": 7,
+    "id": 7,
+    "allowedToOpen": true,
     "src": "https://example.com/image2.jpg",
     "alt": "A serene beach"
   },
   {
-    "type": "quiz",
-    "question": "What is the chemical symbol for water?",
-    "solution": "H2O",
-    "options": [
-      "HO",
-      "H2O",
-      "O2",
-      "H2"
-    ]
-  },
-  {
     "type": "quote",
+    "day": 8,
+    "id": 8,
+    "allowedToOpen": true,
     "header": "Inspiration",
     "text": "The best time to plant a tree was 20 years ago. The second best time is now.",
     "author": "Chinese Proverb"
   },
   {
-    "type": "text",
-    "header": "Day 3",
-    "text": "Stay motivated and keep learning!"
-  },
-  {
-    "type": "image",
-    "src": "https://example.com/image3.jpg",
-    "alt": "A majestic mountain"
-  },
-  {
     "type": "quiz",
-    "question": "Which element has the atomic number 1?",
-    "solution": "Hydrogen",
-    "options": [
-      "Oxygen",
-      "Hydrogen",
-      "Helium",
-      "Carbon"
-    ]
+    "day": 9,
+    "id": 9,
+    "allowedToOpen": true,
+    "question": "What is the chemical symbol for water?",
+    "solution": "H2O",
+    "options": ["HO", "H2O", "O2", "H2"]
   },
   {
     "type": "quote",
+    "day": 10,
+    "id": 10,
+    "allowedToOpen": true,
+    "header": "Drive",
+    "text": "Don't watch the clock; do what it does. Keep going.",
+    "author": "Sam Levenson"
+  },
+  {
+    "type": "text",
+    "day": 11,
+    "id": 11,
+    "allowedToOpen": true,
+    "header": "Day 4",
+    "text": "You are doing great!"
+  },
+  {
+    "type": "quote",
+    "day": 12,
+    "id": 12,
+    "allowedToOpen": true,
     "header": "Determination",
     "text": "It does not matter how slowly you go as long as you do not stop.",
     "author": "Confucius"
   },
   {
-    "type": "text",
-    "header": "Day 4",
-    "text": "You are doing great!"
+    "type": "image",
+    "day": 13,
+    "id": 13,
+    "allowedToOpen": true,
+    "src": "https://example.com/image3.jpg",
+    "alt": "A majestic mountain"
+  },
+  {
+    "type": "quiz",
+    "day": 14,
+    "id": 14,
+    "allowedToOpen": true,
+    "question": "Which element has the atomic number 1?",
+    "solution": "Hydrogen",
+    "options": ["Oxygen", "Hydrogen", "Helium", "Carbon"]
   },
   {
     "type": "image",
+    "day": 15,
+    "id": 15,
+    "allowedToOpen": true,
     "src": "https://example.com/image4.jpg",
     "alt": "A bustling city"
   },
   {
     "type": "quiz",
+    "day": 16,
+    "id": 16,
+    "allowedToOpen": false,
     "question": "What is the largest mammal in the world?",
     "solution": "Blue Whale",
-    "options": [
-      "Elephant",
-      "Blue Whale",
-      "Giraffe",
-      "Orca"
-    ]
-  },
-  {
-    "type": "quote",
-    "header": "Encouragement",
-    "text": "The harder you work for something, the greater you'll feel when you achieve it."
+    "options": ["Elephant", "Blue Whale", "Giraffe", "Orca"]
   },
   {
     "type": "text",
+    "day": 17,
+    "id": 17,
+    "allowedToOpen": false,
     "header": "Day 5",
     "text": "Halfway there, keep going!"
   },
   {
-    "type": "image",
-    "src": "https://example.com/image5.jpg",
-    "alt": "A dense forest"
+    "type": "quote",
+    "day": 18,
+    "id": 18,
+    "allowedToOpen": false,
+    "header": "Encouragement",
+    "text": "The harder you work for something, the greater you'll feel when you achieve it."
   },
   {
     "type": "quiz",
+    "day": 19,
+    "id": 19,
+    "allowedToOpen": false,
     "question": "Which organ is responsible for pumping blood throughout the body?",
     "solution": "Heart",
-    "options": [
-      "Lungs",
-      "Brain",
-      "Kidneys",
-      "Heart"
-    ]
+    "options": ["Lungs", "Brain", "Kidneys", "Heart"]
   },
   {
     "type": "quote",
+    "day": 20,
+    "id": 20,
+    "allowedToOpen": false,
     "header": "Perseverance",
     "text": "The only limit to our realization of tomorrow is our doubts of today.",
     "author": "Franklin D. Roosevelt"
   },
   {
-    "type": "text",
-    "header": "Day 6",
-    "text": "Believe in yourself and all that you are."
-  },
-  {
     "type": "image",
+    "day": 21,
+    "id": 21,
+    "allowedToOpen": false,
     "src": "https://example.com/image6.jpg",
     "alt": "A picturesque waterfall"
   },
   {
+    "type": "quote",
+    "day": 22,
+    "id": 22,
+    "allowedToOpen": false,
+    "header": "Success",
+    "text": "Success is not the key to happiness. Happiness is the key to success.",
+    "author": "Albert Schweitzer"
+  },
+  {
     "type": "quiz",
+    "day": 23,
+    "id": 23,
+    "allowedToOpen": false,
+    "question": "Which continent is the largest by land area?",
+    "solution": "Asia",
+    "options": ["Africa", "Asia", "Europe", "North America"]
+  },
+  {
+    "type": "quiz",
+    "day": 24,
+    "id": 24,
+    "allowedToOpen": false,
     "question": "What is the speed of light?",
     "solution": "299,792,458 meters per second",
     "options": [
@@ -170,102 +210,5 @@
       "150,000,000 meters per second",
       "299,792 meters per second"
     ]
-  },
-  {
-    "type": "quote",
-    "header": "Success",
-    "text": "Success is not the key to happiness. Happiness is the key to success.",
-    "author": "Albert Schweitzer"
-  },
-  {
-    "type": "text",
-    "header": "Day 7",
-    "text": "You are closer to your goal!"
-  },
-  {
-    "type": "image",
-    "src": "https://example.com/image7.jpg",
-    "alt": "A tranquil lake"
-  },
-  {
-    "type": "quiz",
-    "question": "Which continent is the largest by land area?",
-    "solution": "Asia",
-    "options": [
-      "Africa",
-      "Asia",
-      "Europe",
-      "North America"
-    ]
-  },
-  {
-    "type": "quote",
-    "header": "Focus",
-    "text": "The future belongs to those who believe in the beauty of their dreams.",
-    "author": "Eleanor Roosevelt"
-  },
-  {
-    "type": "text",
-    "header": "Day 8",
-    "text": "Stay positive and keep learning!"
-  },
-  {
-    "type": "image",
-    "src": "https://example.com/image8.jpg",
-    "alt": "A snowy mountain peak"
-  },
-  {
-    "type": "quiz",
-    "question": "What is the main ingredient in guacamole?",
-    "solution": "Avocado",
-    "options": [
-      "Tomato",
-      "Onion",
-      "Avocado",
-      "Pepper"
-    ]
-  },
-  {
-    "type": "quote",
-    "header": "Drive",
-    "text": "Don't watch the clock; do what it does. Keep going.",
-    "author": "Sam Levenson"
-  },
-  {
-    "type": "text",
-    "header": "Day 9",
-    "text": "Almost there!"
-  },
-  {
-    "type": "image",
-    "src": "https://example.com/image9.jpg",
-    "alt": "A starry night sky"
-  },
-  {
-    "type": "quiz",
-    "question": "Which element is known as the 'King of the Jungle'?",
-    "solution": "Lion",
-    "options": [
-      "Tiger",
-      "Elephant",
-      "Lion",
-      "Cheetah"
-    ]
-  },
-  {
-    "type": "quote",
-    "header": "Achievement",
-    "text": "The best way to predict the future is to create it.",
-    "author": "Peter Drucker"
-  },
-  {
-    "type": "text",
-    "header": "Day 10",
-    "text": "Congratulations, you've completed the challenge!"
-  },
-  {
-    "type": "image",
-    "src": "https://example.com/image10.jpg",
-    "alt": "A celebratory fireworks display"
   }
 ]
