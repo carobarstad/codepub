@@ -24,6 +24,6 @@ export type QuoteContent = {
   author?: string;
 };
 
-export type Item = TextContent | QuizContent | ImageContent | QuoteContent;
+export type ContentItem = TextContent | QuizContent | ImageContent | QuoteContent;
 
 export type ContentType = 'text' | 'image' | 'video' | 'quiz' | 'quote';

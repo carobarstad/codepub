@@ -1,5 +1,5 @@
 import QuizOption from '@/components/QuizOption';
-import { QuizContent } from '@/types/Item';
+import { QuizContent } from '@/types/ContentItem';
 
 const Quiz = ({ item }: { item: QuizContent }) => {
   return (
