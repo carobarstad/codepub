@@ -41,6 +41,7 @@ export const QuizOptions = ({
           </li>
         ))}
       </ul>
+      {correctAnswer && <p className='mt-4'>The correct answer is {correctAnswer}</p>}
     </div>
   );
 };
