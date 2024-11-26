@@ -15,14 +15,18 @@ export const getCalendarData = async () => {
   });
 };
 
-export const getItemByIndex = async (index: number) => {
+export const getItemById = async (id: number) => {
   const data = await getCalendarData();
 
   if (!data) return null;
-  if (index < 0 || index > data.length) return null;
-  return new Promise<ContentItem>((resolve, reject) => {
-    setTimeout(() => {
-      resolve(data[index]);
-    }, 1500);
-  });
+  if (id < 0 || id > data.length) return null;
+  return data.find((d) => d.id === id);
+};
+
+export const getQuizAnswerById = async (id: number) => {
+  const quizItem = await getItemById(id);
+
+  if (!(quizItem?.type === 'quiz')) return null;
+
+  return quizItem.solution;
 };
