@@ -3,11 +3,10 @@ import styles from './assets/snowfall.module.css';
 export const Snowfall = () => {
   const snowflakes = Array.from({ length: 50 }, (_, i) => ({
     cx: Math.random() * 1600,
-    cy: 0,
+    cy: -100,
     r: Math.random() * 3 + 1,
     delay: Math.random() * 5000,
   }));
-  console.log(styles);
 
   return (
     <svg

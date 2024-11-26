@@ -22,7 +22,7 @@ export const CalendarGrid = ({ itemsPromise }: CalendarGridProps) => {
   const shuffledItems = shuffleArray(items);
 
   return (
-    <div className='grid lg:grid-cols-6 sm:grid-cols-4 grid-cols-2 gap-2 h-full py-2 px-4'>
+    <div className='grid mt-4 lg:grid-cols-6 sm:grid-cols-4 grid-cols-2 gap-4 h-full py-2 px-4'>
       {shuffledItems.map((item) => (
         <Link
           key={item.id}
@@ -66,11 +66,11 @@ export const CalendarGridSkeleton = () => {
     { id: 24, title: '24' },
   ];
   return (
-    <div className='min-h-screen flex justify-center bg-slate-200 h-full'>
-      <div className='grid lg:grid-cols-6 sm:grid-cols-4 grid-cols-2 gap-2 h-full py-2 px-4'>
+    <div className='min-h-screen flex justify-center bg-[#267083] h-full'>
+      <div className='grid lg:grid-cols-6 sm:grid-cols-4 grid-cols-2 gap-4 h-full py-2 px-4'>
         {items.map((item) => (
           <div key={item.id}>
-            <div className='flex border border-white bg-cyan-700 animate-pulse rounded w-36 h-36 items-center justify-center'></div>
+            <div className='flex border bg-gray-300 animate-pulse rounded w-32 h-32 items-center justify-center'></div>
           </div>
         ))}
       </div>

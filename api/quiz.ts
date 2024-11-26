@@ -8,7 +8,6 @@ export const getCalendarData = async () => {
   // Resolve the path to the JSON file
   const quizDataFilePath = path.resolve('./api', 'calendarDays.json');
   const fileContents = fs.readFileSync(quizDataFilePath, 'utf8');
-  console.log(fileContents);
   return new Promise<ContentItem[]>((resolve, reject) => {
     setTimeout(() => {
       resolve(JSON.parse(fileContents));
