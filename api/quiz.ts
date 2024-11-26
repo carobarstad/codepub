@@ -25,5 +25,5 @@ export const getItemByIndex = async (index: number) => {
     setTimeout(() => {
       resolve(data[index]);
     }, 1500);
-  })
-}
+  });
+};
