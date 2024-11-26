@@ -1,25 +1,30 @@
 'use client';
-import React, { useState } from 'react';
+import { getQuizAnswerById } from '@/api/quiz';
+import Spinner from '@/components/Spinner';
+import React, { useState, useTransition } from 'react';
 
-export const QuizOptions = ({
-  question,
-  options,
-  getAnswer,
-}: {
+interface QuizOptionsProps {
+  id: number;
   question: string;
   options: string[];
-  getAnswer: () => Promise<string>;
-}) => {
+}
+
+export const QuizOptions = ({ id, question, options }: QuizOptionsProps) => {
   const [chosenAnswer, setChosenAnswer] = useState('');
   const [correctAnswer, setCorrectAnswer] = useState<string | null>(null);
+  const [isPending, startTransition] = useTransition();
+
   const handleSubmitAnswer = async (chosenAnswer: string) => {
-    const answer = await getAnswer();
-    setCorrectAnswer(answer);
     setChosenAnswer(chosenAnswer);
+    // startTransition gives us a pending state when we are waiting for the async function
+    startTransition(async () => {
+      const answer = await getQuizAnswerById(id); // ! This is a server action!
+      setCorrectAnswer(answer);
+    });
   };
 
   const check = (pickedOption: string, currentOption: string) => {
-    if (!pickedOption) return 'default';
+    if (!pickedOption || !correctAnswer) return 'default';
     if (pickedOption === currentOption && pickedOption === correctAnswer) return 'success';
     if (pickedOption === currentOption) return 'error';
     return 'default';
@@ -36,7 +41,10 @@ export const QuizOptions = ({
               onClick={async () => handleSubmitAnswer(option)}
               variant={check(chosenAnswer, option)}
             >
-              {option}
+              <div className='flex gap-2 justify-center'>
+                {isPending && option === chosenAnswer && <Spinner />}
+                {option}
+              </div>
             </QuizOption>
           </li>
         ))}
