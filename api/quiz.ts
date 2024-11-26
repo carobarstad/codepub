@@ -1,7 +1,7 @@
 'use server';
 import fs from 'fs';
 import path from 'path';
-import { ContentItem, QuizContent } from '../types/ContentItem';
+import { ContentItem } from '../types/ContentItem';
 
 // Function to read quiz data from JSON file
 export const getCalendarData = async () => {
@@ -26,9 +26,4 @@ export const getItemByIndex = async (index: number) => {
       resolve(data[index]);
     }, 1500);
   });
-};
-
-export const checkAnswer = async (id: number, answer: string) => {
-  const correctAnswer = ((await getItemByIndex(id)) as QuizContent).solution;
-  return correctAnswer === answer;
 };

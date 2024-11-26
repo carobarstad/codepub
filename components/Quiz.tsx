@@ -1,14 +1,8 @@
-import { checkAnswer } from '@/api/quiz';
-// import { checkAnswer } from '@/api/quiz';
 import { QuizOptions } from '@/components/QuizOption';
 import { QuizContent } from '@/types/ContentItem';
 
 const Quiz = ({ item }: { item: QuizContent }) => {
-  const handleAnswer = async (option: string) => {
-    const answer = await checkAnswer(item.id, option);
-    return answer;
-  };
-
+  // We send this function to not expose the answer in the client component unless this function is invoked
   const getAnswer = async () => {
     'use server';
     return item.solution;
