@@ -13,12 +13,12 @@ const CalendarDayPage = async ({ params }: { params: Promise<{ id: string }> }) 
     notFound();
   }
   return (
-    <div className=''>
-      <div className='flex'>
+    <div className='flex flex-col h-full'>
+      <div className='flex mb-10'>
         <BackButton />
         <div className='ml-4 text-[#084f62]'>Day {id} of the calendar</div>
       </div>
-      <div>
+      <div className='flex-1'>
         <ContentSwitch item={calendarData} />
       </div>
     </div>

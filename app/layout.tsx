@@ -23,9 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${montserrat.className} bg-[#267083] overflow-hidden`}>
+      <body className={`${montserrat.className} bg-[#267083] flex flex-col h-screen`}>
         <NavBar />
-        {children}
+        <div className='flex-1'>{children}</div>
       </body>
     </html>
   );

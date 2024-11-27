@@ -17,7 +17,7 @@ const roboto = Roboto({
 });
 const Quote = ({ item }: { item: QuoteContent }) => {
   return (
-    <div className='flex justify-center  mt-20'>
+    <div className='flex justify-center'>
       <div className='w-[900px] bg-white p-8 m-2 rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 '>
         <div className={`${charm.className} text-4xl`}>“{item.text}”</div>
         {item.author && (
