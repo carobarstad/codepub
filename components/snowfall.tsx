@@ -14,7 +14,7 @@ export const Snowfall = () => {
       preserveAspectRatio='none'
       width='100%'
       height='100%'
-      className='absolute pointer-events-none'
+      className='fixed top-16 left-0 pointer-events-none'
     >
       {snowflakes.map((snowflake, i) => (
         <g key={i}>
