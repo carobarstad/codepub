@@ -3,10 +3,10 @@ import fs from 'fs';
 import path from 'path';
 import { ContentItem } from '../types/ContentItem';
 
-// Function to read quiz data from JSON file
+// Function to read calendar data from JSON file
 export const getCalendarData = async () => {
   // Resolve the path to the JSON file
-  const quizDataFilePath = path.resolve('./api', 'calendarDays.json');
+  const quizDataFilePath = path.resolve('./serverActions', 'calendarDays.json');
   const fileContents = fs.readFileSync(quizDataFilePath, 'utf8');
   return new Promise<ContentItem[]>((resolve, reject) => {
     setTimeout(() => {
@@ -15,6 +15,7 @@ export const getCalendarData = async () => {
   });
 };
 
+// Function to read specific calendar id from JSON file
 export const getItemById = async (id: number) => {
   const data = await getCalendarData();
 
@@ -23,6 +24,7 @@ export const getItemById = async (id: number) => {
   return data.find((d) => d.id === id);
 };
 
+// Function to get the quiz answer by id
 export const getQuizAnswerById = async (id: number) => {
   const quizItem = await getItemById(id);
 

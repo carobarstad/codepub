@@ -1,7 +1,8 @@
-'use client';
-import { getQuizAnswerById } from '@/api/quiz';
+'use client'; // must be a client component because they are dynamic and use state
 import Spinner from '@/components/Spinner';
-import React, { useState, useTransition } from 'react';
+import { getQuizAnswerById } from '@/serverActions/serverActions';
+import { useState, useTransition } from 'react';
+import QuizOptionButton from './QuizOptionButton';
 
 interface QuizOptionsProps {
   id: number;
@@ -36,7 +37,7 @@ export const QuizOptions = ({ id, question, options }: QuizOptionsProps) => {
       <ul className='grid grid-cols-2 gap-2'>
         {options.map((option, index) => (
           <li key={index} className='w-full'>
-            <QuizOption
+            <QuizOptionButton
               disabled={!!chosenAnswer}
               onClick={async () => handleSubmitAnswer(option)}
               variant={check(chosenAnswer, option)}
@@ -45,7 +46,7 @@ export const QuizOptions = ({ id, question, options }: QuizOptionsProps) => {
                 {isPending && option === chosenAnswer && <Spinner />}
                 {option}
               </div>
-            </QuizOption>
+            </QuizOptionButton>
           </li>
         ))}
       </ul>
@@ -54,29 +55,4 @@ export const QuizOptions = ({ id, question, options }: QuizOptionsProps) => {
   );
 };
 
-interface QuizOptionProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  children: React.ReactNode;
-  variant: 'default' | 'success' | 'error'; // Custom property
-}
-
-const QuizOption: React.FC<QuizOptionProps> = ({ children, variant, onClick, ...props }) => {
-  const backgroundColor =
-    variant === 'default'
-      ? 'bg-slate-300'
-      : variant === 'success'
-        ? 'bg-green-500 disabled:opacity-100 font-semibold'
-        : variant === 'error'
-          ? 'bg-red-500 font-semibold'
-          : 'bg-slate-300 disabled:opacity-100 ';
-  return (
-    <button
-      disabled={props.disabled}
-      onClick={onClick}
-      className={`disabled:pointer-events-none hover:bg-slate-500 hover:text-white p-4 w-full text-sm rounded-md ${backgroundColor}`}
-    >
-      {children}
-    </button>
-  );
-};
-
-export default QuizOption;
+export default QuizOptions;

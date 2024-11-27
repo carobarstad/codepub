@@ -1,5 +1,5 @@
-import { getItemById } from '@/api/quiz';
 import BackButton from '@/components/BackButton';
+import { getItemById } from '@/serverActions/serverActions';
 import { ContentSwitch } from '@/utils/ContentSwitch';
 import { notFound } from 'next/navigation';
 

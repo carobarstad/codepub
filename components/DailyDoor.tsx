@@ -4,7 +4,6 @@ type Props = {
 };
 
 const DailyDoor = ({ day, allowedToOpen }: Props) => {
-  //TODO: see if possible to have as background
   return (
     <div
       className={`flex border border-none rounded w-32 h-32 items-center justify-center ${allowedToOpen ? 'bg-[#8bbdd3]' : 'bg-slate-700'}`}

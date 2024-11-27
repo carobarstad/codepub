@@ -1,8 +1,8 @@
-import { ImageContent } from '@/types/ContentItem';
+import { PictureContent } from '@/types/ContentItem';
 import Image from 'next/image';
 
-const ImageComponent = ({ item }: { item: ImageContent }) => {
+const Picuture = ({ item }: { item: PictureContent }) => {
   return <Image alt={item.alt} src={item.src} width={500} height={500} />;
 };
 
-export default ImageComponent;
+export default Picuture;

@@ -17,7 +17,7 @@ export type QuizContent = {
   options: string[];
 } & BaseContent;
 
-export type ImageContent = {
+export type PictureContent = {
   type: 'image';
   src: string;
   alt: string;
@@ -30,6 +30,6 @@ export type QuoteContent = {
   author?: string;
 } & BaseContent;
 
-export type ContentItem = TextContent | QuizContent | ImageContent | QuoteContent;
+export type ContentItem = TextContent | QuizContent | PictureContent | QuoteContent;
 
 export type ContentType = 'text' | 'image' | 'video' | 'quiz' | 'quote';
